@@ -1,0 +1,7 @@
+<a href="/post/new">New</a>
+<% @posts.each do |post| %>
+  <li>
+    <%= post.content %>
+    <p><%= post.created_at %></p>
+  </li>
+<% end %>
